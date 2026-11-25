@@ -1,0 +1,1 @@
+const fs=require('node:fs');fs.mkdirSync('public/vendor',{recursive:true});fs.copyFileSync(require.resolve('pdf-lib/dist/pdf-lib.min.js'),'public/vendor/pdf-lib.min.js');fs.copyFileSync(require.resolve('pdf-lib/package.json').replace(/package\.json$/,'LICENSE.md'),'public/vendor/pdf-lib-LICENSE.md');
